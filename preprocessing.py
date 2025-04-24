@@ -40,12 +40,7 @@ def preprocess_data():
     x_std = np.std(x, axis=0) + 1e-9 # Standard deviation of the features
     x_normalized = (x - x_mean) / x_std # Standardize the features
 
-    print("Class distribution:", np.unique(y, return_counts=True)) # Print the class distribution
-
-    print("Mean of features:", x_mean) # Print the mean of the features
-
-    print("Standard deviation of features:", x_std) # Print the standard deviation of the features
-
+    
     print("Normalized features:", x_normalized) # Print the normalized features
     print("Shape of features:", x_normalized.shape) # Print the shape of the features
     print("Shape of target variable:", y.shape) # Print the shape of the target variable
